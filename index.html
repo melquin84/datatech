@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DATATECH SOLUCIONES INFORMÁTICAS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
+      font-family: 'Poppins', sans-serif;
+      background: #f9fbfd;
       color: #333;
     }
 
@@ -23,31 +24,37 @@
       color: white;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
     }
 
     nav a:hover {
       color: #ffa500;
     }
 
+    .hero {
+      background-image: url('img/hero.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 5px #000;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      text-shadow: 0 1px 3px #000;
+    }
+
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
-    }
-
-    .hero {
-      background-color: #e6f0ff;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.1em;
     }
 
     .cta {
@@ -66,6 +73,56 @@
       border-radius: 5px;
       display: inline-block;
       margin-top: 15px;
+      font-weight: 600;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .producto {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+
+    .producto img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .producto h4 {
+      margin: 10px 0 5px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    button {
+      background-color: #ffa500;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     footer {
@@ -73,6 +130,19 @@
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp img {
+      width: 60px;
+      height: 60px;
     }
   </style>
 </head>
@@ -82,35 +152,62 @@
     <h1>DATATECH SOLUCIONES INFORMÁTICAS</h1>
     <nav>
       <a href="#">Inicio</a>
-      <a href="#">Software</a>
-      <a href="#">Dispositivos</a>
-      <a href="#">Contacto</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Soluciones digitales para tu negocio</h2>
-    <p>Somos expertos en facturación electrónica, software empresarial y equipamiento para puntos de venta.</p>
+    <h2>Moderniza tu negocio hoy</h2>
+    <p>Facturación electrónica, equipos POS y tecnología para PYMES</p>
   </section>
 
-  <section>
-    <h3>¿Qué ofrecemos?</h3>
-    <ul>
-      <li><strong>Software de Facturación Electrónica:</strong> adaptado a la normativa fiscal salvadoreña.</li>
-      <li><strong>Equipos para Punto de Venta:</strong> impresoras térmicas, escáneres, cajas registradoras, etc.</li>
-      <li><strong>Suministros:</strong> rollos térmicos, cables, lectores, y más.</li>
-    </ul>
+  <section id="productos">
+    <h3>Productos destacados</h3>
+    <div class="productos">
+      <div class="producto">
+        <img src="img/pos.jpg" alt="POS">
+        <h4>Kit Punto de Venta</h4>
+        <p>Incluye impresora térmica, caja registradora y lector.</p>
+      </div>
+      <div class="producto">
+        <img src="img/software.jpg" alt="Software">
+        <h4>Software de Facturación</h4>
+        <p>Adaptado a la normativa salvadoreña. Fácil, rápido y seguro.</p>
+      </div>
+      <div class="producto">
+        <img src="img/suministros.jpg" alt="Suministros">
+        <h4>Suministros y accesorios</h4>
+        <p>Rollos térmicos, lectores, cables y más.</p>
+      </div>
+    </div>
   </section>
 
   <section class="cta">
-    <h3>Activa tu sistema de facturación electrónica</h3>
-    <p>Moderniza tu negocio con una solución integral y confiable.</p>
-    <a href="#">Solicita una demostración</a>
+    <h3>Solicita tu demo gratuita</h3>
+    <p>Agenda una llamada y conoce todos los beneficios de nuestro sistema</p>
+    <a href="https://wa.me/50300000000" target="_blank">Contactar por WhatsApp</a>
+  </section>
+
+  <section id="contacto">
+    <h3>Contáctanos</h3>
+    <form name="contacto">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="correo" placeholder="Tu correo" required />
+      <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
   </section>
 
   <footer>
     © 2025 DATATECH SOLUCIONES INFORMÁTICAS. Todos los derechos reservados.
   </footer>
+
+  <div class="whatsapp">
+    <a href="https://wa.me/50300000000" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+  </div>
 
 </body>
 </html>
