@@ -5,28 +5,64 @@
   <title>DATATECH Soluciones Informáticas</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
     }
     header {
-      background: #f4f4f4;
-      padding: 10px;
+      background-color: #004080;
+      color: white;
+      padding: 20px;
       display: flex;
       align-items: center;
     }
     header img {
-      width: 200px;
-      height: auto;
+      width: 120px;
       margin-right: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav {
+      background-color: #003366;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: bold;
     }
     .banner {
       width: 100%;
+      height: auto;
       max-height: 400px;
       object-fit: cover;
     }
-    section.productos img {
+    section {
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #004080;
+    }
+    .productos img {
       width: 200px;
       margin: 10px;
+    }
+    .servicios, .contacto {
+      background-color: #f0f0f0;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -37,7 +73,24 @@
     <h1>DATATECH Soluciones Informáticas</h1>
   </header>
 
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Productos</a>
+    <a href="#">Contacto</a>
+  </nav>
+
   <img class="banner" src="banner.jpg" alt="Soluciones en Tecnología">
+
+  <section class="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Software empresarial de facturación electrónica</li>
+      <li>Venta de equipos para punto de venta (POS)</li>
+      <li>Instalación y configuración de sistemas</li>
+      <li>Soporte técnico y mantenimiento</li>
+    </ul>
+  </section>
 
   <section class="productos">
     <h2>Productos Destacados</h2>
@@ -45,10 +98,16 @@
     <img src="producto2.jpg" alt="Lector de Código de Barras">
   </section>
 
-  <section>
-    <h2>Soporte Técnico</h2>
-    <img src="soporte.jpg" alt="Servicio Técnico" width="400">
+  <section class="contacto">
+    <h2>Contacto</h2>
+    <p>¿Deseas una solución a tu medida? Escríbenos para asesorarte sin compromiso.</p>
+    <p>Email: contacto@datatech.com</p>
+    <p>WhatsApp: +503 7000 0000</p>
   </section>
+
+  <footer>
+    <p>&copy; 2025 DATATECH Soluciones Informáticas. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
