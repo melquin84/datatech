@@ -78,7 +78,7 @@
   </section>
 
   <footer class="bg-blue-900 text-white text-center p-4">
-    <p>&copy; 2025 DATATECH Soluciones Informáticas</p>
+    <p>&copy; <?php echo date('Y'); ?> DATATECH Soluciones Informáticas</p>
   </footer>
 </body>
 </html>
