@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DATATECH Soluciones Informáticas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+  <header class="bg-blue-900 text-white p-4 flex items-center justify-between">
+    <div class="flex items-center">
+      <img src="LOGODATATECH_transparente.png" alt="Logo DATATECH" class="h-14 mr-4">
+      <h1 class="text-2xl font-bold">DATATECH Soluciones Informáticas</h1>
+    </div>
+    <nav class="hidden md:flex space-x-4">
+      <a href="#servicios" class="hover:underline">Servicios</a>
+      <a href="#productos" class="hover:underline">Productos</a>
+      <a href="#contacto" class="hover:underline">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="relative">
+    <img src="banner.jpg" alt="Soluciones tecnológicas" class="w-full h-72 object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <h2 class="text-white text-3xl md:text-5xl font-bold">Tecnología para tu negocio</h2>
+    </div>
+  </section>
+
+  <section id="servicios" class="p-8 bg-gray-100">
+    <h2 class="text-2xl font-bold text-center text-blue-900 mb-6">Nuestros Servicios</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white p-4 shadow rounded">
+        <h3 class="font-semibold text-lg">Facturación Electrónica</h3>
+        <p class="text-sm">Software adaptado a normativas salvadoreñas.</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <h3 class="font-semibold text-lg">Venta de Dispositivos POS</h3>
+        <p class="text-sm">Impresoras, lectores, cajas y más.</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <h3 class="font-semibold text-lg">Instalación y Configuración</h3>
+        <p class="text-sm">Puesta en marcha de sistemas y capacitación.</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <h3 class="font-semibold text-lg">Soporte Técnico</h3>
+        <p class="text-sm">Mantenimiento remoto o presencial.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="productos" class="p-8">
+    <h2 class="text-2xl font-bold text-center text-blue-900 mb-6">Productos Destacados</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden w-64">
+        <img src="producto1.jpg" alt="Producto 1" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold">Impresora Térmica</h3>
+          <p class="text-sm">Ideal para tickets de venta.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden w-64">
+        <img src="producto2.jpg" alt="Producto 2" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold">Lector de Códigos</h3>
+          <p class="text-sm">Compatible con sistemas POS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="p-8 bg-gray-100">
+    <h2 class="text-2xl font-bold text-center text-blue-900 mb-6">Contacto</h2>
+    <div class="text-center">
+      <p class="mb-2">Email: contacto@datatech.com</p>
+      <p class="mb-2">Tel: +503 7000 0000</p>
+      <a href="https://wa.me/50370000000" target="_blank" class="inline-block mt-4 px-6 py-2 bg-green-500 text-white font-bold rounded hover:bg-green-600">Escríbenos por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="bg-blue-900 text-white text-center p-4">
+    <p>&copy; <?php echo date('Y'); ?> DATATECH Soluciones Informáticas</p>
+  </footer>
+</body>
+</html>
